@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        li {
+            width: 150px;
+        }
+
+        header li {
+            background-color: chartreuse;
+        }
+
+        section li {
+            background-color: coral;
+        }
+
+        footer>ul>li {
+            background-color: cornflowerblue;
+        }
+
+        .first~li {
+            background-color: darkcyan;
+        }
+
+        .third~li {
+            background-color: red;
+        }
+
+        h1+p+ul {
+            background-color: royalblue;
+        }
+
+        header>* {
+            border: 1px blue solid;
+        }
+
+        ul>li>ul>li>ul>li {
+            background-color: sandybrown;
+        }
+
+        h1+p {
+            font-size: 50px;
+        }
+
+        /* Position fixed*/
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            box-shadow: -2px 4px 10px 3px #000;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 200px;
+            right: 200px;
+        }
+
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: tomato;
+            opacity: 0.5;
+            top: 10px;
+            left: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section div {
+            padding: 20px;
+            background-color: rgba(28, 170, 23, 0.25);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>heading</h1>
+        <p>lorem ipsip</p>
+        <ul>
+            <li class="first">item 1</li>
+            <li>item 2</li>
+            <li class="third">item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+        </ul>
+    </header>
+    <header>
+        <p>adsfasd</p>
+    </header>
+    <section>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4
+                        <ul>
+                            <li>orange</li>
+                            <li>apple</li>
+                            <li>banana</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>item 5</li>
+            <li>item 6</li>
+        </ul>
+    </section>
+    <footer>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+        </ul>
+    </footer>
+    <div class="box fixed">
+        FIXED
+    </div>
+    <div class="box relative">
+        RELATIVE
+    </div>
+    <div class="box">
+        STATIC 1
+    </div>
+    <div class="box" style="margin: 50px 0 0 50px;">
+        STATIC 2
+    </div>
+    <div class="box">
+        STATIC 3
+    </div>
+    <div class="box absolute">
+        Absolute
+    </div>
+    <div class="box">
+        STATIC 4
+    </div>
+    <section style="position: relative;">
+        <div>
+            <div style="position: relative;">
+                <div>
+                    <div
+                        style="width: 100px; height: 100px; position: absolute; top:0; left:0; background-color: rgba(205, 92, 92, 0.493);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

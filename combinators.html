@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            width: 150px;
+
+        }
+
+        header li {
+            background-color: chartreuse;
+        }
+
+        section li {
+            background-color: chocolate;
+            list-style-type: circle;
+        }
+
+        footer>ul>li {
+            background-color: cornflowerblue;
+            list-style-type: circle;
+        }
+
+        .first~li {
+            background-color: crimson;
+        }
+
+        .third+li {
+            background-color: darkgreen;
+        }
+
+        h1+p {
+            background-color: darkgrey;
+        }
+
+        header>* {
+            list-style-type: circle;
+        }
+
+        * {
+            list-style-type: circle;
+        }
+
+        ul>li>ul>li>ul>li {
+            background-color: darkseagreen;
+
+        }
+
+        ul>li>ul>li>ul>li>ul>li {
+            background-color: darkslateblue;
+            list-style-type: circle;
+        }
+
+        footer li {
+            list-style-type: circle;
+        }
+
+        /* position*/
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: darkturquoise;
+            box-shadow: 5px 5px 5px 1px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 200px;
+            right: 200px;
+            box-shadow: 5px 5px 5px 1px;
+        }
+
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 150px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: orange;
+            opacity: 0.5;
+            top: 40px;
+            left: 40px;
+        }
+
+        section div {
+            padding: 20px;
+            background-color: rgba(197, 49, 153, 0.281);
+            display: inline-block;
+        }
+
+        section {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> heading</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur
+        </p>
+        <ul>
+            <li class="first">item1</li>
+            <li>item 2</li>
+            <li class="third">item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+
+        </ul>
+    </header>
+    <section>
+        <ul>
+            <li>item1</li>
+            <li>item 2</li>
+            <li>item 3
+                <ul>
+                    <li>item1</li>
+                    <li>item 2
+                        <ul>
+                            <li>item1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                    </li>
+
+                    <li>item 3</li>
+                </ul>
+            </li>
+
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+
+        </ul>
+    </section>
+    <footer>
+        <ul>
+            <li>item1</li>
+            <li>item 2</li>
+            <li>item 3
+                <ul>
+                    <li>item 4</li>
+                    <li>item 5
+                        <ul>
+                            <li>item 4</li>
+                            <li>item 5
+                                <ul>
+                                    <li>item 4</li>
+                                    <li>item 5</li>
+                                    <li>item 6</li>
+                                </ul>
+                            </li>
+                            <li>item 6</li>
+
+                        </ul>
+                    </li>
+                    <li>item 6</li>
+
+                </ul>
+            </li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+
+        </ul>
+    </footer>
+    <div class="box fixed">
+        fixed
+    </div>
+    <div class="box relative">
+        relative</div>
+    <div class="box">
+        static 1
+    </div>
+    <div class="box" style="margin: 70px 0 0 70px;">
+        static 2
+    </div>
+
+    <div class="box">
+        static 3
+    </div>
+    <div class="box absolute">
+        absolute
+    </div>
+    <div class="box">
+        static 4
+    </div>
+    <section style="position: relative;">
+        <div>
+            <div>
+                <div>
+                    <div
+                        style="width: 100px; height: 100px; position:absolute;top: 0; left: 0; background-color: rgba(6, 71, 15, 0.301); ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

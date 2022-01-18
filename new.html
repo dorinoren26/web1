@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+
+
+        p {
+            color: brown;
+        }
+
+        span {
+            color: chocolate;
+        }
+
+        p {
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        u {
+            text-decoration: #f00 wavy underline;
+
+        }
+
+        s {
+            text-decoration-color: #f00;
+        }
+
+
+        #box1 {
+            background-color: #f00;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: solid;
+            margin: 20px;
+            display: inline-block
+        }
+
+        #box2 {
+            background-color: rgb(255, 188, 240);
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            display: inline-block
+        }
+
+        /* התחלה של עיצוב ה box
+ התחלה של עיצוב ה box */
+        #box {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: solid;
+            padding: 5px;
+            border-radius: 12px;
+        }
+
+        .form-input {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+
+</head>
+</head>
+
+<body>
+    <div>
+        שלוום לכולם <br>
+        אני ילד אמיתי
+    </div>
+    <p>
+        Lorem ipsum<span> dolor</span>, sit amet <span style="font-weight: bold;"> adipisicing </span> elit. <br>
+        Quia, possimus delectus omnis exercitationem quis ipsa cum? Eaque hic exercitationem velit consequatur <br>
+        voluptatibus<strong>magnam </strong> magni, soluta ab aliquid cum ipsam iure?
+    </p>
+    <p>
+        Lorem ipsum dolor<abbr title="cascading style sheet"> sit amet consectetur adipisicing elit.</abbr> Non dolores
+        voluptatem quasi expedita?
+        Soluta, sint,
+        provident eos sunt <abbr title="HyperText Markup Language">non itaque cum suscipit </abbr> est atque unde nemo
+        excepturi
+        cupiditate? <a href="https://example.com">Website </a> Esse, debitis.
+    </p>
+    <figure>
+        <blockquote>
+            <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+        </blockquote>
+        <figcaption>First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen
+                    Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).</figcaption>
+    </figure>
+    <p>When Dave asks HAL to open the pod bay door, HAL answers: <q
+            cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do
+            that.</q></p>
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+    <p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+
+    <br>
+
+    <p>Search results for "salamander":</p>
+
+    <hr>
+
+    <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+
+    <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+
+    <p>
+        <del> 300</del>
+        <ins>150</ins>
+
+        <br>
+
+        <p> <s>500</s> </p>
+        <p>250</p>
+    </p>
+    <p>
+        Lorem ipsum,<del style="background-color: #f00; text-decoration:none;"> dolor </del>sit <ins
+            style="background-color: rgb(147, 248, 160); text-decoration:none ;">amet</ins>
+        consectetur
+        adipisicing
+        elit. Doloribus eum deleniti explicabo atque omnis
+        tempore laborum perferendis reprehenderit id, voluptatum vel, nisi modi ex dolore nihil magnam itaque inventore
+        deserunt.
+    </p>
+    <div>
+        <h2> block example</h2>
+        <div id="box1"> </div>
+        <div id="box2"> </div>
+        <div id="box3"> </div>
+    </div>
+    <!--טבלה-->
+    <div dir="rtl">
+        <h2>טבלאות</h2>
+        <h3>טבלה בסיסית</h3>
+        <table>
+            <tr>
+                <td>תא1</td>
+                <td> תא 2</td>
+                <td> תא 2</td>
+            </tr>
+            <tr>
+                <td>תא1</td>
+                <td> תא 2</td>
+                <td> תא 2</td>
+            </tr>
+            <tr>
+                <td>תא1</td>
+                <td> תא 2</td>
+                <td> תא 2</td>
+            </tr>
+        </table>
+        <h3> טבלה עם שורה שמהווה כותרת </h3>
+        <table>
+            <tr>
+                <th> שם</th>
+                <th> צבע אהוב</th>
+                <th> מאכל אהוב</th>
+            </tr>
+            <tr>
+                <td>דורין</td>
+                <td>כחול</td>
+                <td>קוסקוס</td>
+            </tr>
+            <tr>
+                <td>מיקי</td>
+                <td>ורוד</td>
+                <td>גחנון</td>
+            </tr>
+        </table>
+        <h3> טבלה עם head ו body</h3>
+        <table>
+
+            <head>
+                <tr>
+                    <th> שם</th>
+                    <th> צבע אהוב</th>
+                    <th> מאכל אהוב</th>
+                </tr>
+            </head>
+
+            <body>
+                <tr>
+                    <td>דורין</td>
+                    <td>כחול</td>
+                    <td>קוסקוס</td>
+                </tr>
+                <tr>
+                    <td>מיקי</td>
+                    <td>ורוד</td>
+                    <td>גחנון</td>
+                </tr>
+            </body>
+        </table>
+    </div>
+    <!--form-->
+    <div dir="rtl">
+        <h2>טופס יצירת קשר</h2>
+        <form>
+            <div class="form-input">
+                <label for=" first-name">שם פרטי</label>
+                <input name="fn" id="first-name">
+            </div>
+            <div class="form-input">
+                <label for="last-name">שם משפחה</label>
+                <input name="ln" id="last-name">
+            </div>
+            <div class="form-input">
+                <label for="phone">טלפון</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="form-input">
+                <label for="sel"> מדינה</label>
+                <select name="sel" id="sel">
+                    <option value="0">
+                    <option value="0">ישראל</option>
+                    <option value="2">ירדן</option>
+                    <option value="3">סוריה</option>
+
+                </select> <br>
+                <div class="form-input">
+                    <label for="start">בחר תאריך:</label>
+
+                    <input type="date" id="start" name="trip-start" value="2022-01-11" min="2022-01-01"
+                        max="2023-12-31">
+                </div>
+            </div>
+            <div class="form-input">
+                <label for="msg"> הודעה:</label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">הסכימו לתנאים </label>
+            </div class="form-input">
+            <div>
+                <input type="submit" value="שלח">
+            </div>
+            </from>
+    </div>
+
+
+
+
+
+    <div dir="rtl">
+        <p>בחר משהו:</p>
+
+        <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <label for="huey">Huey</label>
+        </div>
+
+        <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Dewey</label>
+        </div>
+
+        <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Louie</label>
+        </div>
+    </div>
+
+
+    <div dir="rtl">
+        <label for="site-search">חפש:</label>
+        <input type="search" id="site-search" name="q" aria-label="Search through site content">
+
+        <button>חפש כאן</button>
+    </div>
+
+    <p>Sign in to your account:</p>
+
+    <div>
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" name="userId">
+    </div>
+
+    <input type="image" id="image" alt="Login" src="/media/examples/login-button.png">
+
+
+</body>
+
+</html>
